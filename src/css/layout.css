@@ -122,7 +122,11 @@
 @media screen and (max-width: 414px) {
   .visual {
     height: 150vh;
-    width: 100px;
+    width: 100vw;
+    transform: translate(-500px, 0);
+  }
+  .vis-images li::before {
+    transform: translate(-500px, 0);
   }
   .base {
     min-width: 50px !important;
@@ -153,13 +157,13 @@
     padding: 0;
   }
   .text {
-    top: 150px;
-    left: 0;
+    margin-top: 150px;
+    left: 10px;
   }
   .text h1 {
     font-weight: bold;
     font-size: 20px;
-    left: 20px;
+    margin-left: 20px;
   }
 
   .main_page {
@@ -172,6 +176,7 @@
   .text p {
     font-size: 12px !important;
     line-height: 20px;
+    padding-left: 10px;
   }
   img {
     transform: scale(0.5);
