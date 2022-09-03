@@ -1,0 +1,197 @@
+.visual {
+  position: relative;
+  width: 100vw;
+  min-width: 1000px;
+  height: 120vh;
+  background: rgb(88, 88, 88);
+  z-index: 0;
+}
+
+.vis-images {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vis-images li {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 2s;
+  opacity: 0;
+}
+.vis-images li.on {
+  transform: scale(1);
+  opacity: 1;
+}
+.vis-images li::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  opacity: 0.3;
+  background-color: black;
+}
+.vis-images li:nth-child(1) {
+  background-image: url(../assets/mv2.jpg);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.text p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.btns {
+  margin-top: 1rem;
+}
+
+.btns:hover {
+  color: white;
+  background-color: rgb(49, 49, 49);
+  opacity: 0.8;
+}
+
+.vis-buttons {
+  position: absolute;
+  left: -5rem;
+  width: 2.5rem;
+}
+
+.vis-buttons li {
+  width: 50%;
+  background-color: white;
+  height: 0.2rem;
+  text-indent: -9990px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+
+.vis-buttons li + li {
+  margin-top: 2rem;
+}
+
+.vis-buttons li.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  transform: scale(2);
+  bottom: 0.5rem;
+  opacity: 0;
+  left: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.arrow.down {
+  opacity: 0.5;
+  bottom: 2rem;
+  animation: scroll 1s ease-in-out infinite;
+}
+::placeholder {
+  color: black !important;
+}
+@media screen and (max-width: 414px) {
+  .visual {
+    height: 150vh;
+    width: 100px;
+  }
+  .base {
+    min-width: 50px !important;
+    max-width: 380px !important;
+    min-height: 50px !important;
+    padding: 0 !important;
+    height: 90% !important;
+    margin: 10px;
+  }
+
+  .table_header > tr > th {
+    font-size: 15px !important;
+  }
+  .title {
+    font-size: 20px !important;
+  }
+
+  .date {
+    font-size: 15px !important;
+  }
+
+  .title {
+    width: 160px !important;
+  }
+  tbody > tr > td {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0;
+  }
+  .text {
+    top: 150px;
+    left: 0;
+  }
+  .text h1 {
+    font-weight: bold;
+    font-size: 20px;
+    left: 20px;
+  }
+
+  .main_page {
+    flex-direction: column !important;
+  }
+  .css-hl264x {
+    margin: 10px !important;
+    max-width: 350px !important;
+  }
+  .text p {
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  img {
+    transform: scale(0.5);
+    margin-bottom: 10px !important;
+  }
+  textarea {
+    width: 300px !important;
+    height: 200px !important;
+  }
+  .btns {
+    width: 300px !important;
+    font-size: 20px !important;
+    height: 30px !important;
+    margin-bottom: 10px;
+  }
+  .btns {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  textarea::placeholder {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+}
