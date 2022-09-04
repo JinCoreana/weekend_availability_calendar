@@ -5,6 +5,7 @@ import { isSameDay } from "./utils";
 import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
 import Background from "../assets/not_working.png";
+import Add from "../assets/add.png";
 
 const Container = styled.div`
   width: 100%;
@@ -16,6 +17,11 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  cursor: ${({ isAvailable }) => (isAvailable ? "pointer" : null)};
+  &:hover {
+    background-image: ${({ isAvailable }) =>
+      isAvailable ? "url(" + Add + ")" : null};
+  }
 `;
 
 const TableData = styled.td`
@@ -42,7 +48,6 @@ const DisplayDate = styled.div`
   top: 2px;
   width: 35px;
   height: 35px;
-  cursor: ${({ isAvailable }) => (isAvailable ? "pointer" : null)};
 `;
 
 const CalendarDay = ({ date, work }) => {
@@ -67,13 +72,16 @@ const CalendarDay = ({ date, work }) => {
       key={`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`}
       align="center"
     >
-      <Container isAvailable={work === "yes" ? true : false}>
+      <Container
+        className="select_date"
+        isAvailable={work === "yes" ? true : false}
+        onClick={() => handleDateSelect(date.getDate(), work)}
+      >
         <DisplayDate
           className="date"
           isAvailable={work === "yes" ? true : false}
           isSelected={isSameDay(selectedDate, date)}
           isToday={isSameDay(today, date)}
-          onClick={() => handleDateSelect(date.getDate(), work)}
         >
           {date.getDate()}
         </DisplayDate>

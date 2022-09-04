@@ -119,9 +119,10 @@
 ::placeholder {
   color: black !important;
 }
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 800px) {
   .visual {
-    height: 150vh;
+    height: 110vh;
     width: 100vw;
     transform: translate(-500px, 0);
   }
@@ -129,12 +130,10 @@
     transform: translate(-500px, 0);
   }
   .base {
-    min-width: 50px !important;
-    max-width: 380px !important;
-    min-height: 50px !important;
+    min-width: 150px !important;
     padding: 0 !important;
-    height: 90% !important;
-    margin: 10px;
+    height: 100% !important;
+    margin: 20px;
   }
 
   .table_header > tr > th {
@@ -157,9 +156,12 @@
     padding: 0;
   }
   .text {
-    margin-top: 150px;
-    left: 10px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+
   .text h1 {
     font-weight: bold;
     font-size: 20px;
@@ -168,6 +170,9 @@
 
   .main_page {
     flex-direction: column !important;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .css-hl264x {
     margin: 10px !important;
