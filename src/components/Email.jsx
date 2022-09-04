@@ -58,8 +58,7 @@ const Email = () => {
           listNum === 0
             ? "Select all dates that you wish to book.\nThis will generate a draft email."
             : "Hi Jin,\n\n Please can you book your time on \n\n" +
-              selectedDateList.map((date) => date + "\n") +
-              "\n Please find the attached information."
+              selectedDateList.map((date) => date + "\n") 
         }
       />
       <CopyToClipboard text={clipboard}>
