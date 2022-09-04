@@ -175,7 +175,7 @@ const Calendar = () => {
   return (
     <MainPage className="main_page">
       <Base className="base">
-        <Header>
+        <Header className="header">
           <ButtonContainer>
             {year === 2022 && MONTHS[month] !== "September" ? (
               <ArrowButton

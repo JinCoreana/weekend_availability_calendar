@@ -119,8 +119,25 @@
 ::placeholder {
   color: black !important;
 }
-
+@media screen and (max-width: 1600px) {
+  html {
+    min-width: 1600px;
+    min-height: 120%;
+  }
+  .visual {
+    position: relative;
+    width: 100vw;
+    min-width: 1700px;
+    height: 120vh;
+    background: rgb(88, 88, 88);
+    z-index: 0;
+  }
+}
 @media screen and (max-width: 800px) {
+  html {
+    min-width: 800px;
+    min-height: 100%;
+  }
   .visual {
     height: 110vh;
     width: 100vw;
@@ -145,6 +162,7 @@
 
   .date {
     font-size: 15px !important;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .title {
@@ -178,6 +196,99 @@
     margin: 10px !important;
     max-width: 350px !important;
   }
+  .text p {
+    font-size: 12px !important;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+  img {
+    transform: scale(0.5);
+    margin-bottom: 10px !important;
+  }
+  textarea {
+    width: 300px !important;
+    height: 200px !important;
+  }
+  .btns {
+    width: 300px !important;
+    font-size: 20px !important;
+    height: 30px !important;
+    margin-bottom: 10px;
+  }
+  .btns {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  textarea::placeholder {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    min-width: 400px;
+    min-height: 100%;
+  }
+  .visual {
+    height: 170vh;
+    width: 100%;
+    transform: translate(-500px, 0);
+  }
+  .vis-images li::before {
+    transform: translate(-500px, 0);
+  }
+  .base {
+    min-width: 150px !important;
+    padding: 0 !important;
+    height: 100% !important;
+    margin: 20px;
+    margin-top: 250px;
+  }
+
+  .table_header > tr > th {
+    padding: 0;
+
+    font-size: 12px !important;
+  }
+  .title {
+    font-size: 20px !important;
+    padding: 0px !important;
+    margin: 0 !important;
+  }
+
+  .date {
+    font-size: 12px !important;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .title {
+    width: 160px !important;
+  }
+  tbody > tr > td {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0;
+  }
+  .text {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .text h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .main_page {
+    flex-direction: column !important;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
   .text p {
     font-size: 12px !important;
     line-height: 20px;
