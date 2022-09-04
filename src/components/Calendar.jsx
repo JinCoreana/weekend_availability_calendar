@@ -217,7 +217,7 @@ const Calendar = () => {
           <TableBody className="table_body">{render()}</TableBody>
         </Table>
       </Base>
-      <Email />
+      <Email className="email" />
     </MainPage>
   );
 };
