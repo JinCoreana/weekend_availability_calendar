@@ -74,7 +74,7 @@ const Email = () => {
       </CopyToClipboard>
       <p
         className="last_font"
-        style={({ marginBottom: "20px" }, { fontSize: "15px" })}
+        style={({ marginBottom: "20px" }, { fontSize: "18px" })}
       >
         The selected time slots will be closed after the receipt of your email.
       </p>
