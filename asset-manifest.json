@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/weekend_cad/static/css/main.a5ca1551.css",
+    "main.css": "/weekend_cad/static/css/main.709d6372.css",
     "main.js": "/weekend_cad/static/js/main.d55832fb.js",
-    "static/media/mv2.jpg": "/weekend_cad/static/media/mv2.b9ff26f89bb508dc3c8e.jpg",
+    "static/media/mv2.jpg": "/weekend_cad/static/media/mv2.ccf8ec94a19ef6f62b9d.jpg",
     "static/media/not_working.png": "/weekend_cad/static/media/not_working.6b5609346199e7f90ecf.png",
     "index.html": "/weekend_cad/index.html",
-    "main.a5ca1551.css.map": "/weekend_cad/static/css/main.a5ca1551.css.map",
+    "main.709d6372.css.map": "/weekend_cad/static/css/main.709d6372.css.map",
     "main.d55832fb.js.map": "/weekend_cad/static/js/main.d55832fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5ca1551.css",
+    "static/css/main.709d6372.css",
     "static/js/main.d55832fb.js"
   ]
 }
