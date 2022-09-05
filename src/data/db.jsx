@@ -38,7 +38,7 @@ const dates = {
     },
     {
       date: "10",
-      work: "yes",
+      work: "no",
     },
     {
       date: "11",
