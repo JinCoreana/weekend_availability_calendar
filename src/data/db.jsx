@@ -10,11 +10,11 @@ const dates = {
     },
     {
       date: "3",
-      work: "yes",
+      work: "no",
     },
     {
       date: "4",
-      work: "yes",
+      work: "no",
     },
     {
       date: "5",
