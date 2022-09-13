@@ -66,11 +66,11 @@ const dates = {
     },
     {
       date: "17",
-      work: "yes",
+      work: "no",
     },
     {
       date: "18",
-      work: "yes",
+      work: "no",
     },
     {
       date: "19",
