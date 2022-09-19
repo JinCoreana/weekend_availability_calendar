@@ -94,11 +94,11 @@ const dates = {
     },
     {
       date: "24",
-      work: "yes",
+      work: "no",
     },
     {
       date: "25",
-      work: "yes",
+      work: "no",
     },
     {
       date: "26",
