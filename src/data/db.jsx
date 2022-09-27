@@ -128,11 +128,11 @@ const dates = {
   October: [
     {
       date: "1",
-      work: "yes",
+      work: "no",
     },
     {
       date: "2",
-      work: "yes",
+      work: "no",
     },
     {
       date: "3",
@@ -156,11 +156,11 @@ const dates = {
     },
     {
       date: "8",
-      work: "yes",
+      work: "no",
     },
     {
       date: "9",
-      work: "yes",
+      work: "no",
     },
     {
       date: "10",
@@ -184,11 +184,11 @@ const dates = {
     },
     {
       date: "15",
-      work: "yes",
+      work: "no",
     },
     {
       date: "16",
-      work: "yes",
+      work: "no",
     },
     {
       date: "17",
@@ -212,11 +212,11 @@ const dates = {
     },
     {
       date: "22",
-      work: "yes",
+      work: "no",
     },
     {
       date: "23",
-      work: "yes",
+      work: "no",
     },
     {
       date: "24",
@@ -240,11 +240,11 @@ const dates = {
     },
     {
       date: "29",
-      work: "yes",
+      work: "no",
     },
     {
       date: "30",
-      work: "yes",
+      work: "no",
     },
     {
       date: "31",
